@@ -1,0 +1,23 @@
+html { box-sizing: border-box; }
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0; padding: 0;
+}
+
+a, a:active, a:visited {
+	border: none;
+	outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+*:focus { outline: none; }
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}

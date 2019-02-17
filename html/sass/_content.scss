@@ -1,0 +1,65 @@
+.about {
+	@extend .container;
+
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	padding: 0 0 7% 0;
+
+	@include media('>=tablet-l') {
+		padding: 35px 0;
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	&__text {
+		@include media('<tablet-l') {
+			order: 2;
+			text-align: center;
+		}
+
+		@include media('>=tablet-l') {
+			width: 70%;
+		}
+	}
+
+	&__image {
+		img {
+			opacity: 0.97;
+			border-radius: 50%;
+		}
+
+		@include media('<tablet-l') {
+			order: 1;
+			text-align: center;
+			padding-top: 4%;
+			margin-bottom: 3%;
+
+			img { width: 33%; }
+		}
+
+		@include media('>=tablet-l') {
+			width: 27%;
+
+			img { filter: hue-rotate(-20deg);}
+		}
+	}
+}
+
+.contact-me {
+	margin-top: 2em;
+
+	&__button {
+		margin: 0 3px;
+		font-weight: 400;
+		white-space: nowrap;
+		border-bottom: dotted 2px $main-black;
+
+		&:hover {
+			border-bottom: solid 2px $main-black;
+		}
+	}
+}

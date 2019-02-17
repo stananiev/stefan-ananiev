@@ -1,0 +1,41 @@
+.footer {
+	@extend .container;
+
+	text-align: center;
+	padding-bottom: 15px;
+
+	.social {
+		margin-bottom: 20px;
+
+		&__twitter, &__linkedin, &__instagram,
+		&__strava, &__lastfm, &__spotify {
+			margin: 0 0.3em;
+			font-weight: 300;
+			font-size: calc(11px + 0.4vw + 0.2vh);
+
+			opacity: 0.7;
+
+			&:hover { opacity: 1; }
+		}
+
+		&__twitter   { color: #1da1f2; }
+		&__linkedin  { color: #0077b5; }
+		&__instagram { color: #833ab4; }
+		&__lastfm    { color: #d51007; }
+		&__strava    { color: #fc4c02; }
+		&__spotify   { color: #1db954; }
+	}
+
+	small {
+		opacity: 0.5;
+		display: block;
+		font-size: 7px;
+		line-height: 1.4;
+
+		@include media('>=tablet-p') {
+			font-size: 11px;
+		}
+
+		a { font-weight: 500; }
+	}
+}
