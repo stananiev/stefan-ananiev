@@ -1,5 +1,2 @@
-# Redirect "all" to primary domain
-https://stefanananiev.com/* https://stefanananiev.com/ 301!
-
 # Redirect default Netlify subdomain to primary domain
 https://stefanananiev.netlify.com/* https://stefanananiev.com/:splat 301!
